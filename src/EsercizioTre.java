@@ -14,7 +14,7 @@ public class EsercizioTre {
         else return 1;
     }
 
-    public static double perimetroTriangolo (double lato1 , double lato2, double lato3 ){
+    public static double areaTriangolo (double lato1 , double lato2, double lato3 ){
     double semiperimetro = (lato1 + lato2 + lato3);
     return Math.sqrt(semiperimetro * (semiperimetro - lato1) * (semiperimetro - lato2)* (semiperimetro - lato3));
     }
@@ -43,6 +43,6 @@ public class EsercizioTre {
         System.out.println("inserisci il terzo lato del triangolo");
         double lato3Triangolo = scanner.nextDouble();
 
-        System.out.println("il perimetro è " + perimetroTriangolo(latoTriangolo,lato2Triangolo,lato3Triangolo));
+        System.out.println("l'area è " + areaTriangolo(latoTriangolo,lato2Triangolo,lato3Triangolo));
     }
 }
